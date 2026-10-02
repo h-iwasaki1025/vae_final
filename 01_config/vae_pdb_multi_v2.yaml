@@ -1,10 +1,12 @@
-# VAE PDB Multi V2 Configuration
 experiment_name: "vae_pdb_multi_v2"
 
 dataset:
   data_dir: "02_data/PDBMulti_new"
   pixel_size: 128
   random_seed: 720
+  parser_type: "multi_v2"
+  sn_levels: ["0.6", "0.8", "1.0", "1.2", "1.4", "1.6"]
+  test_pdbs: ["1l2o", "2ec6", "1qvi"]
 
 model:
   latent_dim: 10
@@ -17,4 +19,6 @@ training:
   save_every_epochs: 20
 
 output:
-  results_dir: "06_results/vae_pdb_multi_v2"
+  base_dir: "06_results"
+  models_dir: "06_results/models/vae_pdb_multi_v2"
+  graphs_dir: "06_results/graphs/vae_pdb_multi_v2"
