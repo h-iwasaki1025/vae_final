@@ -18,6 +18,12 @@ training:
   learning_rate: 0.001
   save_every_epochs: 20
 
+visualization:
+  cmap_name: "tab10_red_blue"          # tab10 の青 (#1f77b4) と赤 (#d62728) を使用
+  colors:
+    blue: "#1f77b4"                     # tab10 Blue
+    red: "#d62728"                      # tab10 Red
+
 output:
   base_dir: "06_results"
   date_prefix_format: "%Y%m%d"
