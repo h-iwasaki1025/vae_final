@@ -1,0 +1,50 @@
+=== Starting Full Pipeline (Fixed Angles) ===
+Model: /Users/hikaru/Code/2026_Project/04_Savemodel/20260612pdb_axi2normal
+Output: /Users/hikaru/Code/2026_Project/07_result/20260612pdb_axi2normal_fixed
+2026-06-12 19:45:32.286145: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M2 Ultra
+2026-06-12 19:45:32.286178: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 192.00 GB
+2026-06-12 19:45:32.286186: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 72.00 GB
+2026-06-12 19:45:32.286205: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2026-06-12 19:45:32.286218: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2026-06-12 19:45:33.148509: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+Running inference for train sn1.6...
+Inferring 7776 images...
+[1m 1/31[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m7s[0m 257ms/step[1m17/31[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 3ms/step  [1m31/31[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 9ms/step[1m31/31[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 9ms/step
+Saved train sn1.6 inference results.
+Running inference for test sn1.6...
+Inferring 3888 images...
+[1m 1/16[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m3s[0m 205ms/step[1m16/16[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 15ms/step [1m16/16[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 16ms/step
+Saved test sn1.6 inference results.
+Running PCA Explained Variance...
+Saved to /Users/hikaru/Code/2026_Project/07_result/20260612pdb_axi2normal_fixed/pca_explained_variance.png
+2026-06-12 19:46:04.417012: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M2 Ultra
+2026-06-12 19:46:04.417039: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 192.00 GB
+2026-06-12 19:46:04.417047: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 72.00 GB
+2026-06-12 19:46:04.417065: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2026-06-12 19:46:04.417079: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2026-06-12 19:46:05.227510: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+Running Reconstruction Grid...
+Found exactly matched image for 1kk7: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1kk7_xeYS/normal/1_1kk7_000_350_060.tif
+Found exactly matched image for 1kk8: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1kk8_xeYS/normal/0_1kk8_000_300_020.tif
+Found exactly matched image for 1kqm: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1kqm_xeYS/normal/0_1kqm_000_120_290.tif
+Found exactly matched image for 1kwo: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1kwo_xeYS/normal/0_1kwo_000_110_270.tif
+Found exactly matched image for 1l2o: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1l2o_xeYS/normal/0_1l2o_000_240_220.tif
+Found exactly matched image for 1qvi: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1qvi_xeYS/normal/1_1qvi_000_270_050.tif
+Found exactly matched image for 1s5g: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1s5g_xeYS/normal/1_1s5g_000_230_160.tif
+Found exactly matched image for 1sr6: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1sr6_xeYS/normal/1_1sr6_000_320_040.tif
+Found exactly matched image for 2ec6: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_2ec6_xeYS/normal/1_2ec6_000_180_280.tif
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 189ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 195ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 99ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 104ms/step
+Saved to /Users/hikaru/Code/2026_Project/07_result/20260612pdb_axi2normal_fixed/reconstruction_diff_grid.png
+Running Classifier Evaluation...
+Done Classifier Evaluation.
+Running 10D Scatter Matrices...
+Running PCA Individual Plots...
+2026-06-12 19:47:16.918748: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M2 Ultra
+2026-06-12 19:47:16.918774: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 192.00 GB
+2026-06-12 19:47:16.918782: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 72.00 GB
+2026-06-12 19:47:16.918799: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2026-06-12 19:47:16.918812: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2026-06-12 19:47:25.990973: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+Running Angle Maps Generator...
+=== Pipeline Finished ===

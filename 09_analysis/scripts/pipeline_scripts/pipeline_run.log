@@ -1,0 +1,36 @@
+=== Starting Full Pipeline ===
+Model: /Users/hikaru/Code/2026_Project/04_Savemodel/20260612_01_axi2
+Output: /Users/hikaru/Code/2026_Project/07_result/20260612_01_axi2
+Running PCA Explained Variance...
+Saved to /Users/hikaru/Code/2026_Project/07_result/20260612_01_axi2/pca_explained_variance.png
+2026-06-12 11:26:43.525110: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M2 Ultra
+2026-06-12 11:26:43.525148: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 192.00 GB
+2026-06-12 11:26:43.525155: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 72.00 GB
+2026-06-12 11:26:43.525171: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2026-06-12 11:26:43.525184: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2026-06-12 11:26:44.414444: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+Running Reconstruction Grid...
+Found exactly matched image for 1kk7: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1kk7_xeYS/noise/sn1.6/1_1kk7_000_000_000_sn1.6.tif
+Found exactly matched image for 1kk8: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1kk8_xeYS/noise/sn1.6/0_1kk8_000_000_000_sn1.6.tif
+Found exactly matched image for 1kqm: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1kqm_xeYS/noise/sn1.6/0_1kqm_000_000_000_sn1.6.tif
+Found exactly matched image for 1kwo: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1kwo_xeYS/noise/sn1.6/0_1kwo_000_000_000_sn1.6.tif
+Found exactly matched image for 1l2o: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/0_1l2o_xeYS/noise/sn1.6/0_1l2o_000_000_000_sn1.6.tif
+Found exactly matched image for 1qvi: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1qvi_xeYS/noise/sn1.6/1_1qvi_000_000_000_sn1.6.tif
+Found exactly matched image for 1s5g: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1s5g_xeYS/noise/sn1.6/1_1s5g_000_000_000_sn1.6.tif
+Found exactly matched image for 1sr6: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_1sr6_xeYS/noise/sn1.6/1_1sr6_000_000_000_sn1.6.tif
+Found exactly matched image for 2ec6: /Users/hikaru/Code/2026_Project/05_Data/pdb_align_axi2/1_2ec6_xeYS/noise/sn1.6/1_2ec6_000_000_000_sn1.6.tif
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 185ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 189ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 87ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 92ms/step
+Saved to /Users/hikaru/Code/2026_Project/07_result/20260612_01_axi2/reconstruction_diff_grid.png
+Running Classifier Evaluation...
+Done Classifier Evaluation.
+Running 10D Scatter Matrices...
+Running PCA Individual Plots...
+2026-06-12 11:28:42.414248: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M2 Ultra
+2026-06-12 11:28:42.414294: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 192.00 GB
+2026-06-12 11:28:42.414302: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 72.00 GB
+2026-06-12 11:28:42.414318: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2026-06-12 11:28:42.414330: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2026-06-12 11:28:44.078204: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+Running Angle Maps Generator...
+=== Pipeline Finished ===
