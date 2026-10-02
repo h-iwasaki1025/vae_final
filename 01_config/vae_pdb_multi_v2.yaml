@@ -20,5 +20,4 @@ training:
 
 output:
   base_dir: "06_results"
-  models_dir: "06_results/models/vae_pdb_multi_v2"
-  graphs_dir: "06_results/graphs/vae_pdb_multi_v2"
+  date_prefix_format: "%Y%m%d"
