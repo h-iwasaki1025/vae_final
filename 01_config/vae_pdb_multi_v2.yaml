@@ -19,10 +19,11 @@ training:
   save_every_epochs: 20
 
 visualization:
-  cmap_name: "tab10_red_blue"          # tab10 の青 (#1f77b4) と赤 (#d62728) を使用
-  colors:
-    blue: "#1f77b4"                     # tab10 Blue
-    red: "#d62728"                      # tab10 Red
+  cmap_name: "tab10_state"
+  state_colors:
+    state_0: "#d62728"                  # State 0 -> 赤 (tab10 Red)
+    state_1: "#1f77b4"                  # State 1 -> 青 (tab10 Blue)
+    state_2: "#2ca02c"                  # State 2 -> 緑 (tab10 Green)
 
 output:
   base_dir: "06_results"
