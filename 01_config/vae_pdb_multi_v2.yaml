@@ -1,0 +1,20 @@
+# VAE PDB Multi V2 Configuration
+experiment_name: "vae_pdb_multi_v2"
+
+dataset:
+  data_dir: "02_data/PDBMulti_new"
+  pixel_size: 128
+  random_seed: 720
+
+model:
+  latent_dim: 10
+  beta: 1.0
+
+training:
+  epochs: 1000
+  batch_size: 256
+  learning_rate: 0.001
+  save_every_epochs: 20
+
+output:
+  results_dir: "06_results/vae_pdb_multi_v2"
